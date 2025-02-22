@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encontre as melhores oportunidades de emprego no Portal de Empregos.">
+    <title>Vagas de Emprego - Portal de Empregos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .job-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .job-card .card-body {
+            padding: 20px;
+        }
+        .job-card .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .job-card .card-text {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="#">Portal de Empregos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vagas">Vagas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cadastro">Cadastrar Currículo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#empresas">Para Empresas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary text-white px-3" href="#login">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção de Vagas -->
+    <section class="container my-5" id="vagas">
+        <h2 class="text-center mb-5">Vagas Disponíveis</h2>
+        <div class="row">
+            <!-- Vaga 1: Responder Pesquisas -->
+            <div class="col-md-4 mb-4">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Responder Pesquisas</h5>
+                        <p class="card-text"><i class="fas fa-building me-2"></i><strong>Empresa:</strong> Coca cola, Amazon, Shopee etc...</p>
+                        <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i><strong>Local:</strong> Remoto</p>
+                        <p class="card-text"><i class="fas fa-dollar-sign me-2"></i><strong>Salário:</strong> R$ 2.500 - R$ 3.000</p>
+                        <a href="contratar.html" class="btn btn-primary view-details" data-vaga="Responder Pesquisas"><i class="fas fa-eye me-2"></i>Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Vaga 2: Vender Material -->
+            <div class="col-md-4 mb-4">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Vender Material</h5>
+                        <p class="card-text"><i class="fas fa-building me-2"></i><strong>Empresa:</strong> Google Materials </p>
+                        <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i><strong>Local:</strong> Remoto</p>
+                        <p class="card-text"><i class="fas fa-dollar-sign me-2"></i><strong>Salário:</strong> R$ 3.200 - R$ 3.800</p>
+                        <a href="contratar.html" class="btn btn-primary view-details" data-vaga="Vender Material"><i class="fas fa-eye me-2"></i>Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Vaga 3: Avaliar Mídias -->
+            <div class="col-md-4 mb-4">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Avaliar Mídias</h5>
+                        <p class="card-text"><i class="fas fa-building me-2"></i><strong>Empresa:</strong> Midias Digitais Brasil </p>
+                        <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i><strong>Local:</strong> Remoto</p>
+                        <p class="card-text"><i class="fas fa-dollar-sign me-2"></i><strong>Salário:</strong> R$ 2.800 - R$ 3.500</p>
+                        <a href="contratar.html" class="btn btn-primary view-details" data-vaga="Avaliar Mídias"><i class="fas fa-eye me-2"></i>Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Vaga 4: Criando Artes () -->
+            <div class="col-md-4 mb-4">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Criando Artes</h5>
+                        <p class="card-text"><i class="fas fa-building me-2"></i><strong>Empresa:</strong> Design Studio</p>
+                        <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i><strong>Local:</strong> Remoto</p>
+                        <p class="card-text"><i class="fas fa-dollar-sign me-2"></i><strong>Salário:</strong> R$ 3.500 - R$ 4.000</p>
+                        <a href="contratar.html" class="btn btn-primary view-details" data-vaga="Criando Artes"><i class="fas fa-eye me-2"></i>Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Vaga 5: Divulgação de Material -->
+            <div class="col-md-4 mb-4">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Divulgação de Material</h5>
+                        <p class="card-text"><i class="fas fa-building me-2"></i><strong>Empresa:</strong> Marketing Pro</p>
+                        <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i><strong>Local:</strong>Remoto</p>
+                        <p class="card-text"><i class="fas fa-dollar-sign me-2"></i><strong>Salário:</strong> R$ 3.000 - R$ 3.700</p>
+                        <a href="contratar.html" class="btn btn-primary view-details" data-vaga="Divulgação de Material"><i class="fas fa-eye me-2"></i>Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Vaga 6: Preenchendo Formulário -->
+            <div class="col-md-4 mb-4">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Preenchendo Formulário</h5>
+                        <p class="card-text"><i class="fas fa-building me-2"></i><strong>Empresa:</strong> Data Entry</p>
+                        <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i><strong>Local:</strong> Remoto</p>
+                        <p class="card-text"><i class="fas fa-dollar-sign me-2"></i><strong>Salário:</strong> R$ 2.600 - R$ 3.200</p>
+                        <a href="contratar.html" class="btn btn-primary view-details" data-vaga="Preenchendo Formulário"><i class="fas fa-eye me-2"></i>Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Vaga 7: Digitador -->
+            <div class="col-md-4 mb-4">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Digitador</h5>
+                        <p class="card-text"><i class="fas fa-building me-2"></i><strong>Empresa:</strong> Digita Serviços</p>
+                        <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i><strong>Local:</strong> Remoto</p>
+                        <p class="card-text"><i class="fas fa-dollar-sign me-2"></i><strong>Salário:</strong> R$ 2.700 - R$ 3.400</p>
+                        <a href="contratar.html" class="btn btn-primary view-details" data-vaga="Digitador"><i class="fas fa-eye me-2"></i>Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Vaga 8: Avaliando Sites -->
+            <div class="col-md-4 mb-4">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Avaliando Sites</h5>
+                        <p class="card-text"><i class="fas fa-building me-2"></i><strong>Empresa:</strong> Web Quality</p>
+                        <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i><strong>Local:</strong> Remoto</p>
+                        <p class="card-text"><i class="fas fa-dollar-sign me-2"></i><strong>Salário:</strong> R$ 3.100 - R$ 3.900</p>
+                        <a href="contratar.html" class="btn btn-primary view-details" data-vaga="Avaliando Sites"><i class="fas fa-eye me-2"></i>Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Vaga 9: Tradução de Texto -->
+            <div class="col-md-4 mb-4">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tradução de Texto</h5>
+                        <p class="card-text"><i class="fas fa-building me-2"></i><strong>Empresa:</strong> LinguaPro</p>
+                        <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i><strong>Local:</strong> Remoto</p>
+                        <p class="card-text"><i class="fas fa-dollar-sign me-2"></i><strong>Salário:</strong> R$ 3.800 - R$ 5.000</p>
+                        <a href="contratar.html" class="btn btn-primary view-details" data-vaga="Tradução de Texto"><i class="fas fa-eye me-2"></i>Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+            <p>
+
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts (Bootstrap JS e Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Captura o clique no botão "Ver detalhes"
+        document.querySelectorAll('.view-details').forEach(button => {
+            button.addEventListener('click', function(event) {
+                // Salva o nome da vaga no localStorage
+                const vagaSelecionada = this.getAttribute('data-vaga');
+                localStorage.setItem('vagaSelecionada', vagaSelecionada);
+            });
+        });
+    </script>
+</body>
+</html>
